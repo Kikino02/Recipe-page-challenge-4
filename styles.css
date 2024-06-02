@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.padding {
+  padding: 0 30px;
+}
+
+.container {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+.container .main__img {
+  margin-bottom: 30px;
+}
+.container .main__img img {
+  width: 100%;
+}
+.container .main__recipe {
+  margin-bottom: 30px;
+}
+.container .main__recipe .main__title {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.container .main__recipe .main__description {
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.container .main__recipe .main__preparation {
+  padding: 25px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+}
+.container .main__recipe .main__preparation .list__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 15px;
+}
+.container .main__recipe .main__preparation .main__time {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .main__recipe .main__preparation .main__time li {
+  color: hsl(24, 5%, 18%);
+}
+.container .main__ingredients {
+  margin-bottom: 30px;
+}
+.container .main__ingredients .ingredients__title {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+.container .main__ingredients .ingredients__list {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .main__ingredients .ingredients__list li {
+  padding-left: 10px;
+  color: hsl(24, 5%, 18%);
+}
+.container .main__instructions {
+  margin-bottom: 30px;
+}
+.container .main__instructions .instructions__title {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+.container .main__instructions .instructions__list {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .main__instructions .instructions__list li {
+  padding-left: 10px;
+  color: hsl(24, 5%, 18%);
+  line-height: 1.5;
+}
+.container .nutrition__table {
+  padding-bottom: 30px;
+}
+.container .nutrition__table .nutrition__title {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+.container .nutrition__table .nutrition__description {
+  line-height: 1.5;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 15px;
+}
+.container .nutrition__table .nutrition__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .nutrition__table .nutrition__table tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 15px;
+}
+.container .nutrition__table .nutrition__table tr td[data-column="1"] {
+  color: hsl(24, 5%, 18%);
+}
+.container .nutrition__table .nutrition__table tr td[data-column="2"] {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.container .nutrition__table .nutrition__table tr:last-child {
+  border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .padding {
+    padding: 0;
+  }
+  body {
+    display: grid;
+    place-content: center;
+    background-color: hsl(30, 54%, 90%);
+  }
+  body main {
+    width: 50%;
+    margin: 5rem auto;
+  }
+  body main .container {
+    border-radius: 20px;
+    padding: 32px;
+  }
+  body main .container .main__img img {
+    border-radius: 20px;
+  }
+  body main .container .nutrition__table {
+    padding-bottom: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
